@@ -11,9 +11,9 @@ This base focuses on:
 
 Add your demo GIF here:
 
-```md
+
 ![Chatbot Demo](https://github.com/lucib3196/chatbot_ui_ts/blob/master/docs/demo.gif)
-```
+
 
 ## Run Manually (Frontend + Backend) [Recommended]
 

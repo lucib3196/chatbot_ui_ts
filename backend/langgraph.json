@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "my_weather_agent": "./src/weatherAgent.ts:agent"
+  },
+  "env": ".env"
+}

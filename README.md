@@ -9,8 +9,6 @@ This base focuses on:
 
 ## Demo
 
-Add your demo GIF here:
-
 
 ![Chatbot Demo](https://github.com/lucib3196/chatbot_ui_ts/blob/master/docs/demo.gif)
 

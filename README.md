@@ -12,7 +12,7 @@ This base focuses on:
 Add your demo GIF here:
 
 ```md
-![Chatbot Demo](./docs/demo.gif)
+![Chatbot Demo]()
 ```
 
 ## Run Manually (Frontend + Backend) [Recommended]

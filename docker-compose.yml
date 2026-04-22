@@ -1,0 +1,19 @@
+version: "2"
+services:
+  frontend:
+    build: 
+        context: ./frontend
+        dockerfile: Dockerfile.dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+
+  backend:
+    build: 
+        context: ./backend
+        dockerfile: Dockerfile
+    ports:
+      - "2024:2024"
+    volumes:
+      - ./backend:/app

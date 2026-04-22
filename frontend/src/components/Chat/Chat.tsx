@@ -4,8 +4,7 @@ import ChatContainer from "./ChatContainer";
 import { AIMessage, HumanMessage, BaseMessage } from "@langchain/core/messages";
 import { HumanBubble, AIBubble } from "./ChatBubbles";
 import { ChatInput } from "./ChatInput";
-import { useRef } from "react";
-
+import type { ChatSlug } from "../../constants";
 interface MyState {
     messages: BaseMessage[];
     runtime?: any;
@@ -23,10 +22,14 @@ async function blobURLtoBase64(blobUrl: string): Promise<string> {
     });
 }
 
-export default function Chat() {
+type ChatProps = {
+    selectedChat?: ChatSlug
+}
+
+export default function Chat({ selectedChat = "weather" }: ChatProps) {
     const stream = useStream<MyState>({
         apiUrl: AGENT_SERVER_URL,
-        assistantId: SLUG_TO_ASSISTANT["weather"],
+        assistantId: SLUG_TO_ASSISTANT[selectedChat].assistantId,
     });
 
     const handleSubmit = async (
@@ -49,7 +52,7 @@ export default function Chat() {
         }
         let payload = [
             {
-                type: "human",
+                role: "human",
                 content: content,
             },
         ];

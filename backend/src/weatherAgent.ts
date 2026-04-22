@@ -22,9 +22,6 @@ const SYSTEM_PROMPT = `You are a ai data agent assistant
 
 getWeather: Get the weather from a given city and return information to 
 the user. 
-
-You can also analyze images
-
 `;
 
 const model = await initChatModel("gemini-3.1-pro-preview", {

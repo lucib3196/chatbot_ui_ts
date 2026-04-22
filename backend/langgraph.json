@@ -1,7 +1,8 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "my_weather_agent": "./src/weatherAgent.ts:agent"
+    "my_weather_agent": "./src/weatherAgent.ts:agent",
+    "math_agent": "./src/mathAgent.ts:agent"
   },
   "env": ".env"
 }
